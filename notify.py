@@ -2,9 +2,10 @@ from bs4 import BeautifulSoup
 import requests
 import configparser
 
+config = configparser.ConfigParser()
 config.read('config.ini')
 
-token=config['token'] #notify的token放在這
+token=config['notify']['token'] #notify的token放在這
 toke=open('notify.txt','r')#讀取的檔案
 
 response = requests.get("https://www.udemy.com/course/codegym-python/")
