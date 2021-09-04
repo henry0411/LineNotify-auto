@@ -40,7 +40,7 @@ try:
         
 except:
     print("簽到失敗")
-    notify = open("../notify.txt","a")
+    notify = open("notify.txt","a")
     notify.write("巴哈姆特簽到失敗，請手動簽到\ngamer.com.tw\n")
     notify.close()
 
