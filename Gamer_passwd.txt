@@ -1,0 +1,5 @@
+[gamer-com]
+username = 巴哈帳號
+userpasswd =巴哈密碼
+
+#附檔名改成.ini

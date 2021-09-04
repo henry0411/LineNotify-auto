@@ -1,7 +1,18 @@
 import os
-
+import sys
+import time
 read=open('notify.txt','r')
 
+#呼叫簽到
+try:    
+    import Auto_run
+    print("呼叫成功!!")
+    #import Gamer
+    
+except:
+    print("呼叫失敗")
+
+#輸出結果
 if os.path.getsize('notify.txt') > 0:
     try:
         print("true")

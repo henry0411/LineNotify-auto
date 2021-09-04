@@ -1,0 +1,5 @@
+[notify]
+token = line notify的權杖
+
+#附檔名改成.ini
+
