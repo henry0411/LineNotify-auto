@@ -5,9 +5,9 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 config = configparser.ConfigParser()
-config.read('Gamer_passwd.ini')
-myusername = config['gamer-com']['username']#登錄賬號
-mypassword = config['gamer-com']['userpasswd']#登錄密碼
+config.read('gamer.ini')
+myusername = config['gamer-com']['gamername']#登錄賬號
+mypassword = config['gamer-com']['gamerpasswd']#登錄密碼
 
 driver = webdriver.Chrome() #模擬瀏覽器打開網站
 driver.get("https://user.gamer.com.tw/login.php")

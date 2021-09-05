@@ -4,13 +4,21 @@ import time
 read=open('notify.txt','r')
 
 #呼叫簽到
-try:    
-    import Auto_run
-    print("呼叫成功!!")
-    #import Gamer
-    
+try:
+    import Gamer_com
+    print("巴哈成功!!")
 except:
-    print("呼叫失敗")
+    print("巴哈呼叫失敗")
+'''
+try:
+    import Shopee
+    print("蝦皮呼叫成功")
+except:
+    print("蝦皮呼叫失敗")
+'''
+time.sleep(2)
+os.system('taskkill /im chromedriver.exe /F')
+os.system('taskkill /im chrome.exe /F')
 
 #輸出結果
 if os.path.getsize('notify.txt') > 0:
